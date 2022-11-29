@@ -3,4 +3,12 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
-Console.WriteLine("Hello, World!");
+Console.Write("Еnter a number (N): ");
+int n = int.Parse(Console.ReadLine());
+int count = 1;
+double res;
+while (count <= n) {
+    res = Math.Pow(count, 3);
+    Console.Write($"{res} ");
+    count++;
+}
